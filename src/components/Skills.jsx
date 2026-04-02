@@ -5,7 +5,7 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="relative py-24 px-4 text-white bg-gradient-to-bl from-black via-purple-900 to-indigo-900 overflow-hidden"
+      className="relative py-24 px-4 text-white bg-transparent overflow-hidden"
     >
 
       {/* Glow Effects */}

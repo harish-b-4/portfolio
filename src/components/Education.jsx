@@ -5,7 +5,7 @@ const Education = () => {
   return (
     <section
       id="education"
-      className="px-4 bg-gradient-to-tl from-black via-purple-900 to-indigo-900 text-white relative overflow-hidden"
+      className="px-4 bg-transparent text-white relative overflow-hidden"
     >
 
       {/* Glow Effects */}

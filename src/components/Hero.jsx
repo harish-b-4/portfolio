@@ -14,7 +14,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen pt-24 py-10 flex md:flex-row flex-col items-center bg-gradient-to-tr from-black via-purple-900 to-indigo-900 overflow-hidden"
+      className="relative min-h-screen pt-24 py-10 flex md:flex-row flex-col items-center bg-transparent overflow-hidden"
     >
 
       {/* Glow Effects */}

@@ -2,7 +2,7 @@ import { FaHeart } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-tr from-black via-purple-900 to-indigo-900 text-white relative overflow-hidden">
+    <footer className="bg-transparent text-white relative overflow-hidden">
 
       <div className="max-w-6xl mx-auto px-6 py-5 relative z-10">
 

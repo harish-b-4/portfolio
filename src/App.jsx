@@ -5,12 +5,13 @@ import Projects from './components/Project'
 import Contact from './components/Contact'
 import Skills from './components/Skills'
 import Footer from './components/Footer'
+import Education from "./components/Education"
 
 
 function App() {
 
   return (
-    <div>
+    <div className='bg-gradient-to-br from-black via-purple-900 to-indigo-900'>
 
       <Navbar />
 
@@ -21,6 +22,8 @@ function App() {
       <section id="about">
         <About />
       </section>
+
+      <Education />
 
       <section id="skills">
         <Skills />
@@ -34,7 +37,7 @@ function App() {
         <Contact />
       </section>
 
-      <Footer/>
+      <Footer />
     </div>
   )
 }

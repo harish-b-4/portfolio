@@ -11,7 +11,7 @@ const Project = () => {
     <div>
       <section
         id="projects"
-        className="px-4 py-24 bg-gradient-to-tr from-black via-purple-900 to-indigo-900 text-white relative overflow-hidden -mb-[1px]"
+        className="px-4 py-24 bg-transparent text-white relative overflow-hidden -mb-[1px]"
       >
 
         {/* Glow Effects */}

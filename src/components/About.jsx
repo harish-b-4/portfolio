@@ -1,12 +1,11 @@
-import Education from "./Education";
 import profileimg from "../assets/images/Profile Img.png";
 
 const About = () => {
   return (
-    <div className="bg-[#020617]">
+    <div>
       <section
         id="about"
-        className="pt-16 bg-gradient-to-br from-black via-purple-900 to-indigo-900 overflow-hidden relative"
+        className="pt-16 bg-transparent overflow-hidden relative"
       >
 
         {/* Glow Effects */}
@@ -100,9 +99,6 @@ const About = () => {
           </div>
 
         </div>
-
-        {/* Education */}
-        <Education />
 
       </section>
     </div>

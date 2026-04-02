@@ -5,7 +5,7 @@ const Contact = () => {
     <div>
       <section
         id="contact"
-        className="px-4 py-24 bg-gradient-to-br from-black via-purple-900 to-indigo-900 text-white relative overflow-hidden -mb-[1px]"
+        className="px-4 py-24 bg-transparent text-white relative overflow-hidden -mb-[1px]"
       >
 
         {/* Glow Effects */}
