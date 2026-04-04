@@ -43,6 +43,7 @@ const Hero = () => {
             src={profileimg}
             alt="Harish"
             className="relative w-72 h-72 md:w-80 md:h-80 rounded-full object-cover border-4 border-black shadow-2xl shadow-cyan-500/30 group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
           />
 
           {/* Available Badge */}

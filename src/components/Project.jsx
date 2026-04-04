@@ -58,6 +58,7 @@ const Project = () => {
                   src={BulkMail}
                   alt="Bulk Mail Sender"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
                 />
                 {/* Image overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
@@ -115,6 +116,7 @@ const Project = () => {
                   src={Netflix}
                   alt="Netflix Login Page"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
                 />
                 {/* Image overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
@@ -172,6 +174,7 @@ const Project = () => {
                   src={Weather}
                   alt="Weather App"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
                 />
                 {/* Image overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
@@ -228,6 +231,7 @@ const Project = () => {
                   src={TaskManagement}
                   alt="Task Management"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
                 />
                 {/* Image overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
@@ -283,6 +287,7 @@ const Project = () => {
                   src={Nostra}
                   alt="Nostra E-Commerce"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
                 />
                 {/* Image overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
@@ -338,6 +343,7 @@ const Project = () => {
                   src={Apple}
                   alt="Apple UI Clone"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
                 />
                 {/* Image overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
