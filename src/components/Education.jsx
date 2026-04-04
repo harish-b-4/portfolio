@@ -9,8 +9,11 @@ const Education = () => {
     >
 
       {/* Glow Effects */}
-      <div className="absolute top-10 left-10 w-[300px] h-[300px] bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
-      <div className="absolute bottom-10 right-10 w-[250px] h-[250px] bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
+      <div className="hidden lg:block">
+        <div className="absolute top-10 left-10 w-[300px] h-[300px] bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div className="absolute bottom-10 right-10 w-[250px] h-[250px] bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
+      </div>
+
 
       {/* Subtle Grid Overlay */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(139,92,246,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(139,92,246,0.03)_1px,transparent_1px)] bg-[size:60px_60px] pointer-events-none"></div>

@@ -9,8 +9,10 @@ const About = () => {
       >
 
         {/* Glow Effects */}
-        <div className="absolute top-20 left-10 w-[350px] h-[350px] bg-cyan-500/10 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-10 w-[300px] h-[300px] bg-purple-500/15 rounded-full blur-3xl animate-pulse"></div>
+        <div className="hidden lg:block">
+          <div className="absolute top-20 left-10 w-[350px] h-[350px] bg-cyan-500/10 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-20 right-10 w-[300px] h-[300px] bg-purple-500/15 rounded-full blur-3xl animate-pulse"></div>
+        </div>
 
         {/* Subtle Grid Overlay */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(139,92,246,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(139,92,246,0.03)_1px,transparent_1px)] bg-[size:60px_60px]"></div>

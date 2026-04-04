@@ -9,8 +9,10 @@ const Contact = () => {
       >
 
         {/* Glow Effects */}
-        <div className="absolute top-20 left-10 w-[350px] h-[350px] bg-cyan-500/10 rounded-full blur-3xl pointer-events-none animate-pulse"></div>
-        <div className="absolute bottom-20 right-10 w-[300px] h-[300px] bg-indigo-500/15 rounded-full blur-3xl pointer-events-none animate-pulse"></div>
+        <div className="hidden lg:block">
+          <div className="absolute top-20 left-10 w-[350px] h-[350px] bg-cyan-500/10 rounded-full blur-3xl pointer-events-none animate-pulse"></div>
+          <div className="absolute bottom-20 right-10 w-[300px] h-[300px] bg-indigo-500/15 rounded-full blur-3xl pointer-events-none animate-pulse"></div>
+        </div>
 
         {/* Grid Overlay */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(139,92,246,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(139,92,246,0.03)_1px,transparent_1px)] bg-[size:60px_60px] pointer-events-none"></div>
@@ -55,8 +57,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-gray-300 text-xs uppercase tracking-widest mb-0.5">Email</p>
-                    
-                    <a  href="mailto:harishb.developer@gmail.com"
+
+                    <a href="mailto:harishb.developer@gmail.com"
                       className="text-white text-sm font-medium hover:text-cyan-400 transition-colors duration-300"
                     >
                       harishb.developer@gmail.com
@@ -71,8 +73,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-gray-300 text-xs uppercase tracking-widest mb-0.5">Phone</p>
-                    
-                    <a  href="tel:+919150517706"
+
+                    <a href="tel:+919150517706"
                       className="text-white text-sm font-medium hover:text-teal-400 transition-colors duration-300"
                     >
                       +91 91505 17706
@@ -98,8 +100,8 @@ const Contact = () => {
                 <p className="text-xs text-gray-300 uppercase tracking-widest mb-4">Find me on</p>
                 <div className="flex gap-3">
 
-                  
-                  <a  href="https://github.com/harish-b-4"
+
+                  <a href="https://github.com/harish-b-4"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-11 h-11 flex items-center justify-center rounded-xl bg-white/5 border border-white/10 text-gray-300 text-xl hover:bg-white/10 hover:text-white hover:border-white/30 hover:-translate-y-1 transition-all duration-300"
@@ -107,8 +109,8 @@ const Contact = () => {
                     <FaGithub />
                   </a>
 
-                  
-                   <a href="https://www.linkedin.com/in/harish-mern-stack-react/"
+
+                  <a href="https://www.linkedin.com/in/harish-mern-stack-react/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-11 h-11 flex items-center justify-center rounded-xl bg-white/5 border border-white/10 text-gray-300 text-xl hover:bg-[#0A66C2]/20 hover:text-[#0A66C2] hover:border-[#0A66C2]/40 hover:-translate-y-1 transition-all duration-300"
@@ -116,8 +118,8 @@ const Contact = () => {
                     <FaLinkedin />
                   </a>
 
-                  
-                  <a  href="https://wa.me/9150517706?text=Hi%20Harish,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect."
+
+                  <a href="https://wa.me/9150517706?text=Hi%20Harish,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-11 h-11 flex items-center justify-center rounded-xl bg-white/5 border border-white/10 text-gray-300 text-xl hover:bg-[#25D366]/20 hover:text-[#25D366] hover:border-[#25D366]/40 hover:-translate-y-1 transition-all duration-300"

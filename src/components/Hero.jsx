@@ -18,9 +18,11 @@ const Hero = () => {
     >
 
       {/* Glow Effects */}
-      <div className="absolute top-1/3 left-1/3 w-[500px] h-[500px] bg-cyan-400/15 rounded-full blur-3xl animate-pulse"></div>
-      <div className="absolute bottom-1/4 right-1/4 w-[350px] h-[350px] bg-purple-500/20 rounded-full blur-3xl animate-pulse"></div>
-      <div className="absolute top-10 right-10 w-[200px] h-[200px] bg-indigo-400/10 rounded-full blur-2xl"></div>
+      <div className="hidden lg:block">
+        <div className="absolute top-1/3 left-1/3 w-[500px] h-[500px] bg-cyan-400/15 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-[350px] h-[350px] bg-purple-500/20 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute top-10 right-10 w-[200px] h-[200px] bg-indigo-400/10 rounded-full blur-2xl"></div>
+      </div>
 
       {/* Subtle Grid Overlay */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(139,92,246,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(139,92,246,0.03)_1px,transparent_1px)] bg-[size:60px_60px]"></div>
@@ -82,7 +84,7 @@ const Hero = () => {
 
         {/* Tagline */}
         <p className="mt-4 text-sm text-gray-300 max-w-sm md:mx-0 mx-auto leading-relaxed">
-         Passionate about building responsive and user-friendly web applications 
+          Passionate about building responsive and user-friendly web applications
           using modern technologies like React.js, Node.js, Express.js and MongoDB.
         </p>
 
