@@ -1,15 +1,17 @@
+import { lazy, Suspense } from "react";
+
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-import About from './components/About'
-import Projects from './components/Project'
-import Contact from './components/Contact'
-import Skills from './components/Skills'
-import Footer from './components/Footer'
-import Education from "./components/Education"
 
+// Lazy load heavy sections
+const About = lazy(() => import('./components/About'))
+const Projects = lazy(() => import('./components/Project'))
+const Contact = lazy(() => import('./components/Contact'))
+const Skills = lazy(() => import('./components/Skills'))
+const Education = lazy(() => import('./components/Education'))
+const Footer = lazy(() => import('./components/Footer'))
 
 function App() {
-
   return (
     <div className='bg-gradient-to-br from-black via-purple-900 to-indigo-900'>
 
@@ -19,25 +21,38 @@ function App() {
         <Hero />
       </section>
 
-      <section id="about">
-        <About />
-      </section>
+      <Suspense fallback={<div className="text-white text-center">Loading About...</div>}>
+        <section id="about">
+          <About />
+        </section>
+      </Suspense>
 
-      <Education />
+      <Suspense fallback={<div className="text-white text-center">Loading Education...</div>}>
+        <Education />
+      </Suspense>
 
-      <section id="skills">
-        <Skills />
-      </section>
+      <Suspense fallback={<div className="text-white text-center">Loading Skills...</div>}>
+        <section id="skills">
+          <Skills />
+        </section>
+      </Suspense>
 
-      <section id="projects">
-        <Projects />
-      </section>
+      <Suspense fallback={<div className="text-white text-center">Loading Projects...</div>}>
+        <section id="projects">
+          <Projects />
+        </section>
+      </Suspense>
 
-      <section id="contact">
-        <Contact />
-      </section>
+      <Suspense fallback={<div className="text-white text-center">Loading Contact...</div>}>
+        <section id="contact">
+          <Contact />
+        </section>
+      </Suspense>
+
 
       <Footer />
+
+
     </div>
   )
 }
