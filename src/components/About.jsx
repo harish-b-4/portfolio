@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import profileimg from "../assets/images/Profile Img.png";
 
 const About = () => {
@@ -7,7 +8,6 @@ const About = () => {
         id="about"
         className="pt-16 bg-transparent overflow-hidden relative"
       >
-
         {/* Glow Effects */}
         <div className="hidden lg:block">
           <div className="absolute top-20 left-10 w-[350px] h-[350px] bg-cyan-500/10 rounded-full blur-3xl animate-pulse"></div>
@@ -19,10 +19,15 @@ const About = () => {
 
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 py-16 px-6 relative z-10">
 
-          {/* Profile Image */}
-          <div className="flex-1 flex justify-between">
+          {/* Profile Image — slides in from left */}
+          <motion.div
+            className="flex-1 flex justify-between"
+            initial={{ opacity: 0, x: -80 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{  amount: 0.3 }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
+          >
             <div className="relative group">
-
               {/* Spinning Gradient Ring */}
               <div
                 className="absolute -inset-1 rounded-full bg-gradient-to-r from-cyan-400 via-purple-500 to-indigo-400 opacity-70 blur-sm group-hover:opacity-100 transition duration-500 animate-spin"
@@ -38,18 +43,30 @@ const About = () => {
                 className="relative w-72 h-72 md:w-80 md:h-80 rounded-full object-cover border-4 border-black shadow-2xl shadow-cyan-500/30 group-hover:scale-105 transition-transform duration-500"
                 loading="lazy"
               />
-
             </div>
-          </div>
+          </motion.div>
 
-          {/* About Info Card */}
-          <div className="flex-1 mt-8 md:mt-0">
+          {/* About Info Card — slides in from right */}
+          <motion.div
+            className="flex-1 mt-8 md:mt-0"
+            initial={{ opacity: 0, x: 80 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ amount: 0.3 }}
+            transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
+          >
             <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border border-white/5 hover:shadow-cyan-500/60 hover:border-cyan-500/20 transition-all duration-500">
-              {/* Section Label */}
-              <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 text-cyan-300 text-xs font-semibold uppercase tracking-widest px-3 py-1.5 rounded-full mb-4">
+
+              {/* Section Label — fades up */}
+              <motion.div
+                className="inline-flex items-center gap-2 bg-white/5 border border-white/10 text-cyan-300 text-xs font-semibold uppercase tracking-widest px-3 py-1.5 rounded-full mb-4"
+                initial={{ opacity: 0, y: 12 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.35 }}
+              >
                 <span className="w-1.5 h-1.5 bg-cyan-400 rounded-full"></span>
                 Get To Know Me
-              </div>
+              </motion.div>
 
               <h2 className="text-4xl font-extrabold mb-4 leading-tight">
                 <span className="text-white">About </span>
@@ -86,23 +103,34 @@ const About = () => {
                 problem-solving abilities in real-world development scenarios.
               </p>
 
-              {/* Tech Stack Pills */}
-              <div className="flex flex-wrap gap-2 mt-2">
+              {/* Tech Stack Pills — stagger fade-up */}
+              <motion.div
+                className="flex flex-wrap gap-2 mt-2"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={{
+                  visible: { transition: { staggerChildren: 0.07, delayChildren: 0.5 } },
+                }}
+              >
                 {["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "Firebase"].map((tech) => (
-                  <span
+                  <motion.span
                     key={tech}
+                    variants={{
+                      hidden: { opacity: 0, y: 10 },
+                      visible: { opacity: 1, y: 0, transition: { duration: 0.4 } },
+                    }}
                     className="text-xs font-medium px-3 py-1.5 rounded-full bg-cyan-400/10 text-cyan-300 border border-cyan-400/20 hover:bg-cyan-400/20 transition-colors duration-200 cursor-pointer"
                   >
                     {tech}
-                  </span>
+                  </motion.span>
                 ))}
-              </div>
+              </motion.div>
 
             </div>
-          </div>
+          </motion.div>
 
         </div>
-
       </section>
     </div>
   );

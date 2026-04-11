@@ -1,20 +1,18 @@
 import profileimg from "../assets/images/Profile Img.png";
 import Type from "./Type";
 import { FaGithub, FaLinkedin, FaWhatsapp, FaArrowDown } from "react-icons/fa";
+import { motion } from 'framer-motion';
 
 const Hero = () => {
 
-  const scrollToContact = () => {
-    const section = document.getElementById("contact");
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
-    <section
+    <motion.section
       id="home"
       className="relative min-h-screen pt-24 py-10 flex md:flex-row flex-col items-center bg-transparent overflow-hidden"
+      initial={{ opacity: 0, y: -80 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: "true", amount: 0.3 }}
+      transition={{ duration: 0.7, ease: "easeOut", delay: 0.3 }}
     >
 
       {/* Glow Effects */}
@@ -90,13 +88,10 @@ const Hero = () => {
 
         {/* Buttons */}
         <div className="mt-8 flex flex-wrap gap-4 justify-center md:justify-start">
-          <button
-            onClick={scrollToContact}
-            className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-400 to-indigo-500 text-black px-8 py-3 text-sm font-bold rounded-full shadow-lg shadow-cyan-500/30 hover:shadow-cyan-500/60 hover:scale-105 transition-all duration-300"
-          >
-            Connect With Me
-            <span>→</span>
-          </button>
+
+          <a href="#contact" className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-400 to-indigo-500 text-black px-8 py-3 text-sm font-bold rounded-full shadow-lg shadow-cyan-500/30 hover:shadow-cyan-500/60 hover:scale-105 transition-all duration-300">
+            Connect With Me<span>→</span>
+          </a>
 
 
           {/* Resume Download Button */}
@@ -145,7 +140,7 @@ const Hero = () => {
 
       </div>
 
-    </section>
+    </motion.section>
   );
 };
 

@@ -1,11 +1,16 @@
 import { FaUserGraduate } from "react-icons/fa";
 import { HiAcademicCap } from "react-icons/hi";
+import { motion } from "framer-motion";
 
 const Education = () => {
   return (
-    <section
+    <motion.section
       id="education"
       className="px-4 bg-transparent text-white relative overflow-hidden"
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ amount: 0.3 }}
+      transition={{ duration: 0.7, ease: "easeOut", delay: 0.3}}
     >
 
       {/* Glow Effects */}
@@ -120,7 +125,7 @@ const Education = () => {
 
       </div>
 
-    </section>
+    </motion.section>
   );
 };
 
