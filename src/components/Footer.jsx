@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="text-center md:text-left">
             
             <a  href="#home"
-              className="text-2xl font-extrabold tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-indigo-400"
+              className="text-2xl font-extrabold tracking-widest text-transparent bg-clip-text bg-linear-to-r from-cyan-400 to-indigo-400"
             >
               HARISH
             </a>
@@ -24,7 +24,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom Divider — reduced opacity so it's invisible on mobile */}
-        <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-white/5 to-transparent mt-4 mb-4"></div>
+        <div className="w-full h-[1px] bg-linear-to-r from-transparent via-white/5 to-transparent mt-4 mb-4"></div>
 
         {/* Bottom Row */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-2 text-xs text-white">

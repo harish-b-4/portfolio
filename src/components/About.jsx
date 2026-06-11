@@ -24,18 +24,18 @@ const About = () => {
             className="flex-1 flex justify-between"
             initial={{ opacity: 0, x: -80 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{  amount: 0.3 }}
+            viewport={{ once: "true", amount: 0.3 }}
             transition={{ duration: 0.7, ease: "easeOut" }}
           >
             <div className="relative group">
               {/* Spinning Gradient Ring */}
               <div
-                className="absolute -inset-1 rounded-full bg-gradient-to-r from-cyan-400 via-purple-500 to-indigo-400 opacity-70 blur-sm group-hover:opacity-100 transition duration-500 animate-spin"
+                className="absolute -inset-1 rounded-full bg-linear-to-r from-cyan-400 via-purple-500 to-indigo-400 opacity-70 blur-sm group-hover:opacity-100 transition duration-500 animate-spin"
                 style={{ animationDuration: "7s" }}
               ></div>
 
               {/* Inner Ring */}
-              <div className="absolute -inset-0.5 rounded-full bg-gradient-to-r from-cyan-400 to-indigo-500 opacity-40"></div>
+              <div className="absolute -inset-0.5 rounded-full bg-linear-to-r from-cyan-400 to-indigo-500 opacity-40"></div>
 
               <img
                 src={profileimg}
@@ -51,8 +51,8 @@ const About = () => {
             className="flex-1 mt-8 md:mt-0"
             initial={{ opacity: 0, x: 80 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ amount: 0.3 }}
-            transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
+            viewport={{ once: "true", amount: 0.3 }}
+            transition={{ duration: 0.9, ease: "easeOut", delay: 0.3 }}
           >
             <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border border-white/5 hover:shadow-cyan-500/60 hover:border-cyan-500/20 transition-all duration-500">
 
@@ -70,11 +70,11 @@ const About = () => {
 
               <h2 className="text-4xl font-extrabold mb-4 leading-tight">
                 <span className="text-white">About </span>
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-indigo-400">Me</span>
+                <span className="text-transparent bg-clip-text bg-linear-to-r from-cyan-400 to-indigo-400">Me</span>
               </h2>
 
               {/* Divider */}
-              <div className="w-12 h-0.5 bg-gradient-to-r from-cyan-400 to-indigo-400 mb-6 rounded-full"></div>
+              <div className="w-12 h-0.5 bg-linear-to-r from-cyan-400 to-indigo-400 mb-6 rounded-full"></div>
 
               <p className="text-gray-400 mb-5 leading-7 text-sm md:text-base">
                 I have completed my{" "}

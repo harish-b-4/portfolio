@@ -13,7 +13,7 @@ const Footer = lazy(() => import('./components/Footer'))
 
 function App() {
   return (
-    <div className='bg-gradient-to-br from-black via-purple-900 to-indigo-900'>
+    <div className='bg-linear-to-br from-black via-purple-900 to-indigo-900'>
 
       <Navbar />
 

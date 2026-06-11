@@ -9,8 +9,8 @@ const Education = () => {
       className="px-4 bg-transparent text-white relative overflow-hidden"
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ amount: 0.3 }}
-      transition={{ duration: 0.7, ease: "easeOut", delay: 0.3}}
+      viewport={{ once: "true", amount: 0.3 }}
+      transition={{ duration: 0.9, ease: "easeOut", delay: 0.4 }}
     >
 
       {/* Glow Effects */}
@@ -36,13 +36,13 @@ const Education = () => {
         {/* Heading */}
         <h3 className="text-4xl md:text-5xl font-extrabold text-center mb-3 leading-tight">
           My{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-indigo-400">
+          <span className="text-transparent bg-clip-text bg-linear-to-r from-cyan-400 to-indigo-400">
             Education
           </span>
         </h3>
 
         {/* Divider */}
-        <div className="w-16 h-0.5 bg-gradient-to-r from-cyan-400 to-indigo-400 mx-auto rounded-full mb-3"></div>
+        <div className="w-16 h-0.5 bg-linear-to-r from-cyan-400 to-indigo-400 mx-auto rounded-full mb-3"></div>
 
         <p className="text-center text-gray-400 mb-12 text-sm">
           My educational background and qualifications.
@@ -72,7 +72,7 @@ const Education = () => {
             </div>
 
             {/* Divider */}
-            <div className="w-full h-[1px] bg-gradient-to-r from-cyan-400/20 to-transparent mb-6"></div>
+            <div className="w-full h-[1px] bg-linear-to-r from-cyan-400/20 to-transparent mb-6"></div>
 
             {/* Info Pills */}
             <div className="flex flex-wrap gap-3 mb-6">
@@ -108,7 +108,7 @@ const Education = () => {
             </p>
 
             {/* Bottom decorative line */}
-            <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-cyan-400/20 to-transparent mt-8"></div>
+            <div className="w-full h-[1px] bg-linear-to-r from-transparent via-cyan-400/20 to-transparent mt-8"></div>
 
             {/* Footer Row */}
             <div className="flex items-center justify-between mt-4">

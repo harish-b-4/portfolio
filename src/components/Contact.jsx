@@ -97,7 +97,7 @@ const Contact = () => {
             initial="hidden"
             whileInView="visible"
             custom={0}
-            viewport={{ once: false }}
+            viewport={{ once: "true" }}
           >
             <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 text-cyan-300 text-xs font-semibold uppercase tracking-widest px-4 py-2 rounded-full">
               <span className="w-1.5 h-1.5 bg-cyan-400 rounded-full"></span>
@@ -112,22 +112,22 @@ const Contact = () => {
             initial="hidden"
             whileInView="visible"
             custom={0.1}
-            viewport={{ once: false }}
+            viewport={{ once: "true" }}
           >
             Contact{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-indigo-400">
+            <span className="text-transparent bg-clip-text bg-linear-to-r from-cyan-400 to-indigo-400">
               Me
             </span>
           </motion.h2>
 
           {/* Divider */}
           <motion.div
-            className="w-16 h-0.5 bg-gradient-to-r from-cyan-400 to-indigo-400 mx-auto rounded-full mb-3"
+            className="w-16 h-0.5 bg-linear-to-r from-cyan-400 to-indigo-400 mx-auto rounded-full mb-3"
             variants={fadeUp}
             initial="hidden"
             whileInView="visible"
             custom={0.15}
-            viewport={{ once: false }}
+            viewport={{ once: "true" }}
           />
 
           {/* Subtitle */}
@@ -137,7 +137,7 @@ const Contact = () => {
             initial="hidden"
             whileInView="visible"
             custom={0.2}
-            viewport={{ once: false }}
+            viewport={{ once: "true" }}
           >
             Feel free to reach out for collaborations or opportunities
           </motion.p>
@@ -149,7 +149,7 @@ const Contact = () => {
               className="flex flex-col gap-6"
               initial={{ opacity: 0, x: -60 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: false, amount: 0.2 }}
+              viewport={{ once: "true", amount: 0.2 }}
               transition={{ duration: 0.7, ease: "easeOut", delay: 0.25 }}
             >
               {/* Info Card */}
@@ -160,7 +160,7 @@ const Contact = () => {
                     className="flex items-center gap-4 group"
                     initial={{ opacity: 0, x: -30 }}
                     whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: false }}
+                    viewport={{ once: "true" }}
                     transition={{ duration: 0.5, ease: "easeOut", delay: 0.35 + i * 0.12 }}
                   >
                     <div className={`w-12 h-12 flex-shrink-0 flex items-center justify-center rounded-xl ${item.bg} border ${item.border} ${item.color} text-lg ${item.hover} transition-colors duration-300`}>
@@ -179,7 +179,7 @@ const Contact = () => {
                 className="bg-black/30 backdrop-blur-md rounded-2xl px-8 py-6 border border-white/5"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: false }}
+                viewport={{ once: "true" }}
                 transition={{ duration: 0.5, ease: "easeOut", delay: 0.7 }}
               >
                 <p className="text-xs text-gray-300 uppercase tracking-widest mb-4">Find me on</p>
@@ -193,7 +193,7 @@ const Contact = () => {
                       className={`w-11 h-11 flex items-center justify-center rounded-xl bg-white/5 border border-white/10 text-gray-300 text-xl hover:-translate-y-1 transition-all duration-300 ${social.className}`}
                       initial={{ opacity: 0, scale: 0.7 }}
                       whileInView={{ opacity: 1, scale: 1 }}
-                      viewport={{ once: false }}
+                      viewport={{ once: "true" }}
                       transition={{ duration: 0.35, ease: "easeOut", delay: 0.75 + i * 0.1 }}
                       whileHover={{ y: -4 }}
                     >
@@ -209,20 +209,20 @@ const Contact = () => {
               className="bg-black/40 backdrop-blur-md rounded-2xl p-8 border border-white/5 hover:border-cyan-500/20 transition-all duration-500"
               initial={{ opacity: 0, x: 60 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: false, amount: 0.2 }}
+              viewport={{ once: "true", amount: 0.2 }}
               transition={{ duration: 0.7, ease: "easeOut", delay: 0.25 }}
             >
               <h3 className="text-lg font-bold text-white mb-1">Send a Message</h3>
               <p className="text-xs text-gray-300 mb-6">I'll get back to you as soon as possible.</p>
 
               {/* Divider */}
-              <div className="w-full h-[1px] bg-gradient-to-r from-cyan-400/20 to-transparent mb-6"></div>
+              <div className="w-full h-[1px] bg-linear-to-r from-cyan-400/20 to-transparent mb-6"></div>
 
               <motion.form
                 className="space-y-5"
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: false }}
+                viewport={{ once: "true", }}
                 variants={{
                   visible: { transition: { staggerChildren: 0.12, delayChildren: 0.45 } },
                 }}
@@ -272,7 +272,7 @@ const Contact = () => {
                 {/* Submit */}
                 <motion.button
                   type="button"
-                  className="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-cyan-400 to-indigo-500 text-black py-3 rounded-xl font-bold text-sm shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 hover:scale-[1.02] active:scale-95 transition-all duration-300"
+                  className="w-full inline-flex items-center justify-center gap-2 bg-linear-to-r from-cyan-400 to-indigo-500 text-black py-3 rounded-xl font-bold text-sm shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 hover:scale-[1.02] active:scale-95 transition-all duration-300"
                   variants={{ hidden: { opacity: 0, y: 16 }, visible: { opacity: 1, y: 0, transition: { duration: 0.5 } } }}
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.96 }}

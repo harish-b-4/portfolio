@@ -31,12 +31,12 @@ const Hero = () => {
 
           {/* Spinning Gradient Ring */}
           <div
-            className="absolute -inset-1 rounded-full bg-gradient-to-r from-cyan-400 via-purple-500 to-indigo-400 opacity-75 blur-sm group-hover:opacity-100 transition duration-500 animate-spin"
+            className="absolute -inset-1 rounded-full bg-linear-to-r from-cyan-400 via-purple-500 to-indigo-400 opacity-75 blur-sm group-hover:opacity-100 transition duration-500 animate-spin"
             style={{ animationDuration: "6s" }}
           ></div>
 
           {/* Inner Ring */}
-          <div className="absolute -inset-0.5 rounded-full bg-gradient-to-r from-cyan-400 to-indigo-500 opacity-50"></div>
+          <div className="absolute -inset-0.5 rounded-full bg-linear-to-r from-cyan-400 to-indigo-500 opacity-50"></div>
 
           {/* Image */}
           <img
@@ -67,7 +67,7 @@ const Hero = () => {
         {/* Heading */}
         <h1 className="text-5xl md:text-7xl font-extrabold text-white mt-2 leading-tight tracking-tight">
           Hi, I'm{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-indigo-400">
+          <span className="text-transparent bg-clip-text bg-linear-to-r from-cyan-400 to-indigo-400">
             Harish
           </span>
         </h1>
@@ -78,7 +78,7 @@ const Hero = () => {
         </h2>
 
         {/* Divider */}
-        <div className="w-16 h-0.5 bg-gradient-to-r from-cyan-400 to-indigo-400 mt-6 md:mx-0 mx-auto rounded-full"></div>
+        <div className="w-16 h-0.5 bg-linear-to-r from-cyan-400 to-indigo-400 mt-6 md:mx-0 mx-auto rounded-full"></div>
 
         {/* Tagline */}
         <p className="mt-4 text-sm text-gray-300 max-w-sm md:mx-0 mx-auto leading-relaxed">
@@ -89,7 +89,7 @@ const Hero = () => {
         {/* Buttons */}
         <div className="mt-8 flex flex-wrap gap-4 justify-center md:justify-start">
 
-          <a href="#contact" className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-400 to-indigo-500 text-black px-8 py-3 text-sm font-bold rounded-full shadow-lg shadow-cyan-500/30 hover:shadow-cyan-500/60 hover:scale-105 transition-all duration-300">
+          <a href="#contact" className="inline-flex items-center gap-2 bg-linear-to-r from-cyan-400 to-indigo-500 text-black px-8 py-3 text-sm font-bold rounded-full shadow-lg shadow-cyan-500/30 hover:shadow-cyan-500/60 hover:scale-105 transition-all duration-300">
             Connect With Me<span>→</span>
           </a>
 

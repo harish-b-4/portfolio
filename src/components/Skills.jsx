@@ -107,7 +107,7 @@ const Skills = () => {
           initial="hidden"
           whileInView="visible"
           custom={0}
-          viewport={{ once: false }}
+          viewport={{ once: "true", }}
         >
           <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 text-cyan-300 text-xs font-semibold uppercase tracking-widest px-4 py-2 rounded-full">
             <span className="w-1.5 h-1.5 bg-cyan-400 rounded-full"></span>
@@ -122,22 +122,22 @@ const Skills = () => {
           initial="hidden"
           whileInView="visible"
           custom={0.1}
-          viewport={{ once: false }}
+          viewport={{ once: "true", }}
         >
           My{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-indigo-400">
+          <span className="text-transparent bg-clip-text bg-linear-to-r from-cyan-400 to-indigo-400">
             Skills
           </span>
         </motion.h2>
 
         {/* Divider */}
         <motion.div
-          className="w-16 h-0.5 bg-gradient-to-r from-cyan-400 to-indigo-400 mx-auto rounded-full mb-3"
+          className="w-16 h-0.5 bg-linear-to-r from-cyan-400 to-indigo-400 mx-auto rounded-full mb-3"
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"
           custom={0.15}
-          viewport={{ once: false }}
+          viewport={{ once: "true", }}
         />
 
         {/* Subtitle */}
@@ -147,7 +147,7 @@ const Skills = () => {
           initial="hidden"
           whileInView="visible"
           custom={0.2}
-          viewport={{ once: false }}
+          viewport={{ once: "true", }}
         >
           Technologies I use as a MERN Full Stack Developer
         </motion.p>
@@ -162,7 +162,7 @@ const Skills = () => {
               initial="hidden"
               whileInView="visible"
               custom={cardIndex}
-              viewport={{ once: false, amount: 0.2 }}
+              viewport={{ once: "true", amount: 0.2 }}
             >
               {/* Card Header */}
               <div className="flex items-center gap-3 mb-6">
@@ -176,14 +176,14 @@ const Skills = () => {
               </div>
 
               {/* Divider */}
-              <div className={`w-full h-[1px] bg-gradient-to-r ${card.divider} to-transparent mb-6`}></div>
+              <div className={`w-full h-[1px] bg-linear-to-r ${card.divider} to-transparent mb-6`}></div>
 
               {/* Skills Pills */}
               <motion.div
                 className="grid grid-cols-2 gap-3"
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: false }}
+                viewport={{ once: "true", }}
                 variants={{ visible: { transition: { staggerChildren: 0.07, delayChildren: cardIndex * 0.15 + 0.3 } } }}
               >
                 {card.items.map((item, i) => (

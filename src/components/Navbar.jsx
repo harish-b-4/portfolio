@@ -16,14 +16,14 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed w-full top-0 left-0 z-50 bg-gradient-to-tr from-black via-purple-900 to-indigo-900 border border-b-white/10 ">
+    <nav className="fixed w-full top-0 left-0 z-50 bg-linear-to-r from-black via-purple-900 to-indigo-900 border border-b-white/10 ">
 
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
 
         {/* Logo */}
         
         <a  href="#home"
-          className="text-2xl font-extrabold tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-indigo-400"
+          className="text-2xl font-extrabold tracking-widest text-transparent bg-clip-text bg-linear-to-r from-cyan-400 to-indigo-400"
         >
           HARISH
         </a>
@@ -34,35 +34,35 @@ const Navbar = () => {
           <li>
             <a href="#home" className="relative px-4 py-2 rounded-lg text-gray-300 hover:text-cyan-400 hover:bg-white/5 transition-all duration-300 group inline-block">
               Home
-              <span className="absolute bottom-1 left-4 right-4 h-[2px] bg-gradient-to-r from-cyan-400 to-indigo-400 rounded-full scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+              <span className="absolute bottom-1 left-4 right-4 h-[2px] bg-linear-to-r from-cyan-400 to-indigo-400 rounded-full scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
             </a>
           </li>
 
           <li>
             <a href="#about" className="relative px-4 py-2 rounded-lg text-gray-300 hover:text-cyan-400 hover:bg-white/5 transition-all duration-300 group inline-block">
               About
-              <span className="absolute bottom-1 left-4 right-4 h-[2px] bg-gradient-to-r from-cyan-400 to-indigo-400 rounded-full scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+              <span className="absolute bottom-1 left-4 right-4 h-[2px] bg-linear-to-r from-cyan-400 to-indigo-400 rounded-full scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
             </a>
           </li>
 
           <li>
             <a href="#skills" className="relative px-4 py-2 rounded-lg text-gray-300 hover:text-cyan-400 hover:bg-white/5 transition-all duration-300 group inline-block">
               Skills
-              <span className="absolute bottom-1 left-4 right-4 h-[2px] bg-gradient-to-r from-cyan-400 to-indigo-400 rounded-full scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+              <span className="absolute bottom-1 left-4 right-4 h-[2px] bg-linear-to-r from-cyan-400 to-indigo-400 rounded-full scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
             </a>
           </li>
 
           <li>
             <a href="#projects" className="relative px-4 py-2 rounded-lg text-gray-300 hover:text-cyan-400 hover:bg-white/5 transition-all duration-300 group inline-block">
               Projects
-              <span className="absolute bottom-1 left-4 right-4 h-[2px] bg-gradient-to-r from-cyan-400 to-indigo-400 rounded-full scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+              <span className="absolute bottom-1 left-4 right-4 h-[2px] bg-linear-to-r from-cyan-400 to-indigo-400 rounded-full scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
             </a>
           </li>
 
           <li>
             <a href="#contact" className="relative px-4 py-2 rounded-lg text-gray-300 hover:text-cyan-400 hover:bg-white/5 transition-all duration-300 group inline-block">
               Contact
-              <span className="absolute bottom-1 left-4 right-4 h-[2px] bg-gradient-to-r from-cyan-400 to-indigo-400 rounded-full scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+              <span className="absolute bottom-1 left-4 right-4 h-[2px] bg-linear-to-r from-cyan-400 to-indigo-400 rounded-full scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
             </a>
           </li>
 
@@ -80,7 +80,7 @@ const Navbar = () => {
 
       {/* Mobile Drawer */}
       <div
-        className={`fixed top-0 left-0 h-screen w-72 bg-gradient-to-br from-black via-purple-900 to-indigo-900 border-r border-white/10 shadow-2xl shadow-black/50 transition-transform duration-300 ease-in-out z-[1000]
+        className={`fixed top-0 left-0 h-screen w-72 bg-linear-to-br from-black via-purple-900 to-indigo-900 border-r border-white/10 shadow-2xl shadow-black/50 transition-transform duration-300 ease-in-out z-[1000]
         ${menuOpen ? "translate-x-0" : "-translate-x-full"}`}
       >
 
@@ -92,7 +92,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between px-6 pt-6">
           <button
             onClick={() => handleNavClick("home")}
-            className="text-xl font-extrabold tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-indigo-400"
+            className="text-xl font-extrabold tracking-widest text-transparent bg-clip-text bg-linear-to-r from-cyan-400 to-indigo-400"
           >
             HARISH
           </button>
@@ -106,7 +106,7 @@ const Navbar = () => {
         </div>
 
         {/* Divider */}
-        <div className="mx-6 mt-4 h-[1px] bg-gradient-to-r from-cyan-400 to-transparent"></div>
+        <div className="mx-6 mt-4 h-[1px] bg-linear-to-r from-cyan-400 to-transparent"></div>
 
         {/* Mobile Nav Links */}
         <ul className="flex flex-col gap-1 mt-8 px-4">
